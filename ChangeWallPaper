@@ -1,0 +1,15 @@
+-- Find all parts in the game with the name "Wall"
+local parts = game:GetService("Workspace"):GetDescendants()
+local walls = {}
+for i, part in pairs(parts) do
+	if part.Name == "Wall" then
+		table.insert(walls, part)
+	end
+end
+
+-- Set the Wallpaper texture of each wall to 6676442385
+for i, wall in pairs(walls) do
+	wall.Wallpaper.Texture = "http://www.roblox.com/asset/?id=6676442369"
+	wall.Wallpaper.StudsPerTileU = 10
+	wall.Wallpaper.StudsPerTileV = 10
+end
