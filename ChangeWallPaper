@@ -12,4 +12,6 @@ for i, wall in pairs(walls) do
 	wall.Wallpaper.Texture = "http://www.roblox.com/asset/?id=6676442369"
 	wall.Wallpaper.StudsPerTileU = 10
 	wall.Wallpaper.StudsPerTileV = 10
+	wall.Wallpaper.Color3 = 149, 148, 148
+	wall.Wallpaper.Transparency = 0
 end
