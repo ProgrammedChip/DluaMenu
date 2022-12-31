@@ -1,4 +1,5 @@
--- Find all parts in the game with the name "Wall"
+while wait(3) do
+    -- Find all parts in the game with the name "Wall"
 local parts = game:GetService("Workspace"):GetDescendants()
 local walls = {}
 for i, part in pairs(parts) do
@@ -14,4 +15,5 @@ for i, wall in pairs(walls) do
 	wall.Wallpaper.StudsPerTileV = 10
 	wall.Wallpaper.Color3 = 149, 148, 148
 	wall.Wallpaper.Transparency = 0
+end
 end
