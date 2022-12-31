@@ -1,2 +1,2 @@
--- loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgrammedChip/DluaMenu/main/ChangeWallPaper'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgrammedChip/DluaMenu/main/ChangeWallPaper'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgrammedChip/DluaMenu/main/InsertRadio'))()
