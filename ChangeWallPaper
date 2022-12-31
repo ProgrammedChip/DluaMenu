@@ -1,19 +1,24 @@
 while wait(3) do
-    -- Find all parts in the game with the name "Wall"
-local parts = game:GetService("Workspace"):GetDescendants()
-local walls = {}
-for i, part in pairs(parts) do
-	if part.Name == "Wall" then
-		table.insert(walls, part)
+	-- Find all parts in the game with the name "Wall"
+	local parts = game:GetService("Workspace"):GetDescendants()
+	local walls = {}
+	for i, part in pairs(parts) do
+		if part:IsA("BasePart") and part.Name == "Wall" then
+			table.insert(walls, part)
+		end
 	end
-end
 
--- Set the Wallpaper texture of each wall to 6676442385
-for i, wall in pairs(walls) do
-	wall.Wallpaper.Texture = "http://www.roblox.com/asset/?id=6676442369"
-	wall.Wallpaper.StudsPerTileU = 10
-	wall.Wallpaper.StudsPerTileV = 10
-	wall.Wallpaper.Color3 = 149, 148, 148
-	wall.Wallpaper.Transparency = 0
-end
+	-- Set the texture of each decal in each wall to 6011614693
+	for i, wall in pairs(walls) do
+		local decals = wall:GetDescendants()
+		for j, decal in pairs(decals) do
+			if decal:IsA("Decal") then
+				decal.Texture = "http://www.roblox.com/asset/?id=6676442369"
+				decal.StudsPerTileU = 10
+				decal.StudsPerTileV = 10
+				decal.Color3 = Color3.new(0.584314, 0.580392, 0.580392)
+				decal.Transparency = 0
+			end
+		end
+	end
 end
