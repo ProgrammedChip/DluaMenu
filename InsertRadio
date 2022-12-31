@@ -1,6 +1,7 @@
 local InsertService = game:GetService("InsertService")
 
-local modelId = 11988362686 -- Replace with the ID of the model you want to insert
-local model = InsertService:InsertContent(modelId, game.Workspace)
+local modelId = 11988509349 -- Replace with the ID of the model you want to insert
+local model = InsertService:LoadAsset(modelId)
+model.Parent = workspace
 
-print(model) -- Outputs the model that was inserted
+print(model.Parent, model.Name) -- Outputs the model that was inserted
