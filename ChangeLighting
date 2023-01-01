@@ -1,0 +1,7 @@
+-- not made by ai :(
+-- made by a ####### human ##
+while wait(3) do
+	local lighting = game.Lighting
+	local MCC = lighting.MainColorCorrection
+	MCC.Contrast = -0.01
+end
