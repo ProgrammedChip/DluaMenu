@@ -1,4 +1,4 @@
--- made by stupid human
+-- thanks to penguin maniack for helping with this shit ( he made a video on his yt )
 local model = game:GetObjects("rbxassetid://11988509349")
 model.Parent = workspace
 model.Anchored = true
