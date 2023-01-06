@@ -6,3 +6,34 @@ model.CFrame = workspace.CurrentRooms[0].Parts.FrontDesk.Paper.CFrame * CFrame.n
 model.Prompt.Triggered:Connect(function()
       firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "testing")
 end)
+
+-- script needed a few tweaking by a human, sorry
+
+local radio = model
+
+-- Replace "song" with the ID of the audio file that you want to play
+local song = radio.Audio
+local song2 = radio.Audio2
+
+-- Replace "prompt" with the part that the player will use to activate the radio
+local prompt = radio.PromptPart.Prompt
+
+-- Initialize the toggle variable to false
+local isPlaying = false
+
+prompt.Triggered:Connect(function(hit)
+		-- Toggle the radio
+		if isPlaying then
+			-- Stop the song
+			song:Stop()
+			wait(1)
+			song2:Stop()
+			isPlaying = false
+		else
+			-- Play the song
+			song:Play()
+			song2:Play()
+			isPlaying = true
+	end
+end)
+
