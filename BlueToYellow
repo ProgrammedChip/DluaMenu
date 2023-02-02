@@ -1,0 +1,5 @@
+local Players = game.Players
+local plr = Players.LocalPlayer
+
+plr.PlayerGui.MainUI.Initiator.Main_Game.Health.Music.Blue.SoundId = 10907273416
+plr.PlayerGui.MainUI.Initiator.Main_Game.Health.Music.Blue.End.SoundId = 10907273416
